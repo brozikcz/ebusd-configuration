@@ -1,7 +1,7 @@
 # type (r[1-9];w;u),circuit,name,[comment],[QQ],ZZ,PBSB,[ID],field1,part (m/s),datatypes/templates,divider/values,unit,comment,,,
 #,BAI00,ecoCompact (euro),0010015600 296,,,,,,,,,,,,,
 *r,,,,,,"B509","0D",,,,,,,,,
-*w,#NOT_YET_CONFIRMED,,,,,"B509","0E",,,,,,,,,
+*w,,,,,,"B509","0E",,,,,,,,,
 *wi,#install_NOT_YET_CONFIRMED,,,,,"B509","0E",,,,,,,,,
 *ws,#service_NOT_YET_CONFIRMED,,,,,"B509","0E",,,,,,,,,
 *[SW>=413],scan,,,SW,,>=413,,,,,,,,,,
@@ -92,7 +92,7 @@ r;wi,,HwcTempMax,d.20 Maximum DHW temperature,,,,"D900",,,temp,,,Max. Speicherso
 r;wi,,OptionalRelais,d.26 Optional relay,,,,"B800",,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Function of optional relay
 r;wi,,AccessoriesOne,d.27 Accessory relay 1,,,,"B900",,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Function of accessory relay 1,,,
 r;wi,,AccessoriesTwo,d.28 Accessory relay 2,,,,"BA00",,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Function of accessory relay 2,,,
-r;wi,,FanSpeedOffsetMin,d.50 Minimum fan speed offset,,,,"A700",,,SIN,,1/min,Fan minimum speed offset,,,
+r;w,,FanSpeedOffsetMin,d.50 Minimum fan speed offset,,,,"A700",,,SIN,,1/min,Fan minimum speed offset,,,
 r;wi,,FanSpeedOffsetMax,d.51 Maximum fan speed offset,,,,"A800",,,SIN,,1/min,Fan maximum speed offset,,,
 r,,DeactivationsTemplimiter,d.60 Shutdowns by the temp limiter,,,,"2000",,,UCH,,,Number of shutdowns by the safety temperature limiter,,,
 r,,DeactivationsIFC,d.61 Ignition failures,,,,"1F00",,,UCH,,,Number of ignition failures (unsuccessful last-run or faulty flame signal),,,
